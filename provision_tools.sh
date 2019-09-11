@@ -41,7 +41,7 @@ pyenv install 2.7.16
 
 ## Set the global Python versions.
 echo -e "\033[42m!¡!¡! CFPB Mac Setup !¡!¡! SETTING GLOBAL PYTHON VERSIONS ¡!¡!¡\033[0m"
-echo "!¡!¡! (This will make `python` version 3.6.9, and `python2` will be 2.7.16.)"
+echo "!¡!¡! (This will make python version 3.6.9, and python2 will be 2.7.16.)"
 pyenv global 3.6.9 2.7.16
 
 
@@ -97,4 +97,4 @@ git config --global commit.template $HOME/.gitmessage
 
 
 echo -e "\033[42m!¡!¡! CFPB Mac Setup !¡!¡! SETUP COMPLETE! ¡!¡!¡\033[0m"
-echo "!¡!¡! Be sure to `source ~./bashrc` or open a new terminal window."
+echo "!¡!¡! Be sure to source ~/.bashrc or open a new terminal window."
