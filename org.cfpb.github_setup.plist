@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>KeepAlive</key>
+	<false/>
+	<key>Label</key>
+	<string>org.cfpb.github_setup</string>
+	<key>ProgramArguments</key>
+	<array>
+        <string>osascript</string>
+        <string>-e</string>
+        <string>tell application "Terminal"
+                    activate
+                    do script "/usr/local/github_setup.sh -l"
+                end tell</string>
+	</array>
+	<key>RunAtLoad</key>
+	<true/>
+</dict>
+</plist>

@@ -1,0 +1,21 @@
+# 1. If applied, this commit will...
+
+
+# 2. Explain why this change is being made
+
+
+# 3. Provide links to any relevant issues, articles or other resources
+
+
+#-----------------------------------------------@----------------------#
+#
+# 1. Commit summary. Keep it under 50 characters. @-symbol above is a
+#    marker for that. Don't end it with a period. Imperative mood.
+#
+# 2. Description of commit should explain WHY a change was made and
+#    lines should be wrapped to 72 characters; marked by the #-symbol.
+#
+# 3. Optionally, reference a GH issue number or other links.
+#
+# For more tips: http://chris.beams.io/posts/git-commit
+#
