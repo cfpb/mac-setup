@@ -35,15 +35,16 @@ if command -v pyenv 1>/dev/null 2>&1; then
 fi
 
 ## Install the versions of Python that we use.
-echo -e "\033[44;97m!¡!¡! CFPB Mac Setup !¡!¡! INSTALLING PYTHON 3.6.9 AND 2.7.16 ¡!¡!¡\033[0m"
-pyenv install 3.6.9
-pyenv install 2.7.16
+export PY2_VER="2.7.16"
+export PY3_VER="3.6.9"
+echo -e "\033[44;97m!¡!¡! CFPB Mac Setup !¡!¡! INSTALLING PYTHON '${PY3_VER}' AND '${PY2_VER}' ¡!¡!¡\033[0m"
+pyenv install ${PY3_VER}
+pyenv install ${PY2_VER}
 
 ## Set the global Python versions.
 echo -e "\033[44;97m!¡!¡! CFPB Mac Setup !¡!¡! SETTING GLOBAL PYTHON VERSIONS ¡!¡!¡\033[0m"
-echo "!¡!¡! (This will make python version 3.6.9, and python2 will be 2.7.16.)"
-pyenv global 3.6.9 2.7.16
-
+echo "!¡!¡! (This will make python version '${PY3_VER}', and python2 will be '${PY2_VER}'.)"
+pyenv global ${PY3_VER} ${PY2_VER}
 
 # Install NVM (Node Version Manager).
 # https://github.com/nvm-sh/nvm
