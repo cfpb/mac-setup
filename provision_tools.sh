@@ -37,7 +37,7 @@ fi
 ## Install the versions of Python that we use.
 export PY2_VER="2.7.16"
 export PY3_VER="3.6.9"
-echo -e "\033[44;97m!¡!¡! CFPB Mac Setup !¡!¡! INSTALLING PYTHON '${PY3_VER}' AND '${PY2_VER}' ¡!¡!¡\033[0m"
+echo -e "\033[44;97m!¡!¡! CFPB Mac Setup !¡!¡! INSTALLING PYTHON ${PY3_VER} AND ${PY2_VER} ¡!¡!¡\033[0m"
 pyenv install ${PY3_VER}
 pyenv install ${PY2_VER}
 
