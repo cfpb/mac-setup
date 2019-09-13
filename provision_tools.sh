@@ -43,7 +43,7 @@ pyenv install ${PY2_VER}
 
 ## Set the global Python versions.
 echo -e "\033[44;97m!¡!¡! CFPB Mac Setup !¡!¡! SETTING GLOBAL PYTHON VERSIONS ¡!¡!¡\033[0m"
-echo "!¡!¡! (This will make python version '${PY3_VER}', and python2 will be '${PY2_VER}'.)"
+echo "!¡!¡! (This will make python version ${PY3_VER}, and python2 will be ${PY2_VER}.)"
 pyenv global ${PY3_VER} ${PY2_VER}
 
 # Install NVM (Node Version Manager).
