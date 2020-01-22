@@ -20,7 +20,7 @@ echo "!¡!¡! (This will take a while. Stretch your legs.)"
 brew install git git-secrets pyenv pyenv-virtualenvwrapper
 
 
-# Setup Python environment.
+# Set up Python environment.
 # Following the instructions at:
 # https://github.com/cfpb/development/blob/master/guides/installing-python.md
 echo -e "\033[44;97m!¡!¡! CFPB Mac Setup !¡!¡! INITIALIZING PYENV ¡!¡!¡\033[0m"
@@ -41,7 +41,6 @@ pyenv install ${PY3_VER}
 
 ## Set the global Python versions.
 echo -e "\033[44;97m!¡!¡! CFPB Mac Setup !¡!¡! SETTING GLOBAL PYTHON VERSION ¡!¡!¡\033[0m"
-echo "!¡!¡! (This will make python version ${PY3_VER}.)"
 pyenv global ${PY3_VER}
 
 # Install NVM (Node Version Manager).

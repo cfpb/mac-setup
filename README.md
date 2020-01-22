@@ -13,7 +13,7 @@ This includes, but is not limited to:
 - [Homebrew](http://brew.sh/)
 - Up-to-date or cfgov-refresh-specific versions of several core developer tools:
   - Git (replacing Apple Git)
-  - pyenv and pyenv-virtualenvwrapper, with Python 3
+  - pyenv and pyenv-virtualenvwrapper with Python 3.6.9
   - PostgreSQL
   - nvm with the latest LTS release of Node
   - Yarn with the following installed globally:
