@@ -20,7 +20,7 @@ echo "!¡!¡! (This will take a while. Stretch your legs.)"
 brew install git git-secrets pyenv pyenv-virtualenvwrapper
 
 
-# Set up Python stuff.
+# Set up Python environment.
 # Following the instructions at:
 # https://github.com/cfpb/development/blob/master/guides/installing-python.md
 echo -e "\033[44;97m!¡!¡! CFPB Mac Setup !¡!¡! INITIALIZING PYENV ¡!¡!¡\033[0m"
@@ -34,17 +34,14 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 
-## Install the versions of Python that we use.
-export PY2_VER="2.7.16"
+## Install the version of Python that we use.
 export PY3_VER="3.6.9"
-echo -e "\033[44;97m!¡!¡! CFPB Mac Setup !¡!¡! INSTALLING PYTHON ${PY3_VER} AND ${PY2_VER} ¡!¡!¡\033[0m"
+echo -e "\033[44;97m!¡!¡! CFPB Mac Setup !¡!¡! INSTALLING PYTHON ${PY3_VER} ¡!¡!¡\033[0m"
 pyenv install ${PY3_VER}
-pyenv install ${PY2_VER}
 
 ## Set the global Python versions.
-echo -e "\033[44;97m!¡!¡! CFPB Mac Setup !¡!¡! SETTING GLOBAL PYTHON VERSIONS ¡!¡!¡\033[0m"
-echo "!¡!¡! (This will make python version ${PY3_VER}, and python2 will be ${PY2_VER}.)"
-pyenv global ${PY3_VER} ${PY2_VER}
+echo -e "\033[44;97m!¡!¡! CFPB Mac Setup !¡!¡! SETTING GLOBAL PYTHON VERSION ¡!¡!¡\033[0m"
+pyenv global ${PY3_VER}
 
 # Install NVM (Node Version Manager).
 # https://github.com/nvm-sh/nvm
