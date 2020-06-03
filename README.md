@@ -13,16 +13,16 @@ This includes, but is not limited to:
 - [Homebrew](http://brew.sh/)
 - Up-to-date or cfgov-refresh-specific versions of several core developer tools:
   - Git (replacing Apple Git)
+  - [git-secrets](https://github.com/awslabs/git-secrets) hooks
+    for ensuring you don't accidentally commit bad stuff
   - pyenv and pyenv-virtualenvwrapper with Python 3.6.9
-  - PostgreSQL
+  - pipx for running isolated Python applications
   - nvm with the latest LTS release of Node
   - Yarn with the following installed globally:
     - yo
     - generator-cf
     - generator-node
     - snyk
-- [git-secrets](https://github.com/awslabs/git-secrets) hooks
-  for ensuring you don't accidentally commit bad stuff
 - Minimal dotfiles with the necessary bits for all of the above to work as expected
 
 ### Running the script

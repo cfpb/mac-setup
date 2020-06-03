@@ -1,6 +1,6 @@
-# Add Yarn and userland Homebrew to the PATH
-# ==========================================
-export PATH="${HOME}/.yarn/bin:${HOME}/.config/yarn/global/node_modules/.bin:${HOME}/homebrew/bin:${PATH}"
+# Add pipx, Yarn, and userland Homebrew to the PATH
+# =================================================
+export PATH="${HOME}/.local/bin:${HOME}/.yarn/bin:${HOME}/.config/yarn/global/node_modules/.bin:${HOME}/homebrew/bin:${PATH}"
 
 
 # Initialize pyenv
