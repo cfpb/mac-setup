@@ -43,6 +43,10 @@ pyenv install ${PY3_VER}
 echo -e "\033[44;97m!¡!¡! CFPB Mac Setup !¡!¡! SETTING GLOBAL PYTHON VERSION ¡!¡!¡\033[0m"
 pyenv global ${PY3_VER}
 
+## Install pipx
+brew install pipx
+
+
 # Install NVM (Node Version Manager).
 # https://github.com/nvm-sh/nvm
 echo -e "\033[44;97m!¡!¡! CFPB Mac Setup !¡!¡! INSTALLING NVM ¡!¡!¡\033[0m"
