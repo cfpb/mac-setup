@@ -50,7 +50,7 @@ brew install pipx
 # Install NVM (Node Version Manager).
 # https://github.com/nvm-sh/nvm
 echo -e "\033[44;97m!¡!¡! CFPB Mac Setup !¡!¡! INSTALLING NVM ¡!¡!¡\033[0m"
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 
 ## Export necessary environment variable for use in this script.
 export NVM_DIR="${HOME}/.nvm"
