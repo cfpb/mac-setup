@@ -13,17 +13,24 @@ install_pyenv() {
 
     echo "# Python and pyenv" >> ${HOME}/.zshenv
     echo export PYENV_ROOT="${HOME}/.pyenv"
-    echo eval "$(pyenv init -)" >> .zshenv
-    echo eval "$(pyenv virtualenv-init -)" >> .zshenv
+    echo export PATH="$PYENV_ROOT/bin:$PATH"
+    echo eval "$(pyenv init --path)" >> ${HOME}/.zshenv
+    echo eval "$(pyenv virtualenv-init -)" >> ${HOME}/.zshenv
+
+    echo export PYENV_ROOT="$HOME/.pyenv"
+eval "$(pyenv init --path)"
+
 }
+
 
 install_preferred_python() {
     echo "$(tput setaf 3)$(tput setab 4)...Installing Python ${PYTHON3_VER}$(tput sgr 0)"
 
     # Initialize pyenv for this script to be able to use it.
     export PYENV_ROOT="${HOME}/.pyenv"
+    export PATH="$PYENV_ROOT/bin:$PATH"
     if command -v pyenv 1>/dev/null 2>&1; then
-      eval "$(pyenv init -)"
+      eval "$(pyenv init --path)"
     fi
 
     # Install build requirements for Python
