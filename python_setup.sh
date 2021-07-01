@@ -12,10 +12,11 @@ install_pyenv() {
     brew install pyenv pyenv-virtualenv
 
     echo "# Python and pyenv" >> ${HOME}/.zshenv
-    echo export PYENV_ROOT="${HOME}/.pyenv"
-    echo export PATH="$PYENV_ROOT/bin:$PATH"
+    echo export PYENV_ROOT="${HOME}/.pyenv" >> ${HOME}/.zshenv
+    echo export PATH="$PYENV_ROOT/bin:$PATH" >> ${HOME}/.zshenv
     echo eval "$(pyenv init --path)" >> ${HOME}/.zshenv
-    echo eval "$(pyenv virtualenv-init -)" >> ${HOME}/.zshenv
+    echo eval "$(pyenv init -)" >> ${HOME}/.zshenv
+    echo eval "$(pyenv-virtualenv init -)" >> ${HOME}/.zshenv
 
     echo export PYENV_ROOT="$HOME/.pyenv"
 eval "$(pyenv init --path)"
@@ -64,4 +65,3 @@ else
     echo "Homebrew was not found. Please ensure that Homebrew is installed or use the `homebrew_setup.sh` script."
     exit 1
 fi
-
