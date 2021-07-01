@@ -18,8 +18,6 @@ install_pyenv() {
     echo eval "$(pyenv init -)" >> ${HOME}/.zshenv
     echo eval "$(pyenv-virtualenv init -)" >> ${HOME}/.zshenv
 
-    echo export PYENV_ROOT="$HOME/.pyenv"
-eval "$(pyenv init --path)"
 
 }
 
