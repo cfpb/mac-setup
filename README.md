@@ -30,6 +30,8 @@ This includes, but is not limited to:
 
 ### Running the script
 
+1. To ensure appropriate network access, 
+   set `export DEV_HOSTS=<list of hostnames>`
 1. Run the following command from the root of this repository
    to initiate the installation: `./mac_setup.sh`.
 1. After the script completes, run `source ~/.zshenv`
@@ -38,6 +40,7 @@ This includes, but is not limited to:
 
 Scripts to set up each component can also be run individually:
 
+- `preflight.sh` to check network access and local configuration before proceeding
 - `homebrew_setup.sh` to install and configure [Homebrew](http://brew.sh/) 
 - `python_setup.sh` to install and configure [our Python development environment](# https://github.com/cfpb/development/blob/master/guides/installing-python.md)
 - `node_setup.sh` to install and configure our Node development environment
