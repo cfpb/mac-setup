@@ -17,8 +17,7 @@ install_pyenv() {
     echo eval "$(pyenv init --path)" >> ${HOME}/.zshenv
     echo eval "$(pyenv init -)" >> ${HOME}/.zshenv
     echo eval "$(pyenv-virtualenv init -)" >> ${HOME}/.zshenv
-
-
+    echo alias workon='pyenv activate $1 > /dev/null 2> /dev/null' >> ${HOME}/.zshenv
 }
 
 
