@@ -3,6 +3,8 @@
 Configurations and scripts for setting up a new developer Mac.
 
 
+**Note**: These scripts currently target macOS Big Sur (11). If you need to setup a Mojave (10.14) Mac, please use the [tagged release for Mojave](https://github.com/cfpb/mac-setup/releases/tag/10.14).
+
 ## Automated software setup
 
 The `mac_setup.sh` script installs a standard developer environment
