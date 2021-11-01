@@ -44,7 +44,7 @@ Scripts to set up each component can also be run individually:
 
 - `preflight.sh` to check network access and local configuration before proceeding
 - `homebrew_setup.sh` to install and configure [Homebrew](http://brew.sh/) 
-- `python_setup.sh` to install and configure [our Python development environment](# https://github.com/cfpb/development/blob/master/guides/installing-python.md)
+- `python_setup.sh` to install and configure [our Python development environment](https://github.com/cfpb/development/blob/master/guides/installing-python.md)
 - `node_setup.sh` to install and configure our Node development environment
 - `git_setup.sh` to install and configure git and [git-secrets](https://github.com/cfpb/development/blob/master/tools/git-secrets-patterns/README.md)
 - `dotfiles_setup.sh` to apply our standard dotfiles
