@@ -7,9 +7,13 @@ install_nvm() {
     # https://github.com/nvm-sh/nvm
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 
-    echo "# Python and pyenv" >> ${HOME}/.zshenv
+    echo "# Node and NVM" >> ${HOME}/.zshenv
     echo export NVM_DIR="${HOME}/.nvm" >> ${HOME}/.zshenv
-    echo source "$NVM_DIR/nvm.sh" >> ${HOME}/.zshenv
+    cat <<EOT >> ${HOME}/.zshenv
+if [ -s "\$NVM_DIR/nvm.sh" ]; then
+    source "\$NVM_DIR/nvm.sh"
+fi
+EOT
 }
 
 install_node() {
