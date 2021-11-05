@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Fail immediately if any commands fail.
+set -e
+
 printf "$(tput bold)$(tput setaf 7)$(tput setab 2)CFPB Mac Setup$(tput sgr 0)\n\n"
 
 # Run our preflight checks to ensure the best chance of success
