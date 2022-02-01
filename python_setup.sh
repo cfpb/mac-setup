@@ -4,7 +4,7 @@
 # https://github.com/cfpb/development/blob/master/guides/installing-python.md
 
 # Specify the default version of Python that we use.
-export PYTHON3_VER="3.6.9"
+export PYTHON3_VER="3.8.12"
 
 install_pyenv() {
     echo "$(tput setaf 3)$(tput setab 4)...Installing pyenv$(tput sgr 0)"
@@ -58,7 +58,7 @@ if [ -d "${HOME}/homebrew" ]; then
     install_pyenv
     install_preferred_python
     install_pipx
-else 
+else
     echo "Homebrew was not found. Please ensure that Homebrew is installed or use the `homebrew_setup.sh` script."
     exit 1
 fi
