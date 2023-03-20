@@ -32,8 +32,6 @@ This includes, but is not limited to:
 
 ### Running the script
 
-1. To ensure appropriate network access, 
-   set `export DEV_HOSTS=<list of hostnames>`
 1. Run the following command from the root of this repository
    to initiate the installation: `./mac_setup.sh`.
 1. After the script completes, run `source ~/.zshenv`
