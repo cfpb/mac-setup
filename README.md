@@ -19,7 +19,7 @@ This includes, but is not limited to:
   - Git (replacing Apple Git)
   - [git-secrets](https://github.com/awslabs/git-secrets) hooks
     for ensuring you don't accidentally commit bad stuff
-  - pyenv and pyenv-virtualenvwrapper with Python 3.6.9
+  - pyenv and pyenv-virtualenvwrapper with Python 3.8.12
   - pipx for running isolated Python applications
     - **IMPORTANT:** [Downgrading Docker Desktop via pipx for use with cf-gov refresh](https://cfpb.github.io/cfgov-refresh/installation/#4-run-docker-compose-for-the-first-time)  
   - nvm with the latest LTS release of Node
